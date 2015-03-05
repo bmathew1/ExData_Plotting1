@@ -3,7 +3,7 @@
 #        plot("household_power_consumption.txt") #pass in the full or relative file path and name
 #Output
 #       png file with the graph in the working directory
-plot4 <- function(dataFile="/Users/benilmathew/Documents/MOOCS/Coursera/Data_science/4-Exploratory_Data_Analysis/Assignments/Assignment1/household_power_consumption.txt") {
+plot4 <- function(dataFile=NULL) {
         #Stop if the file passed in is valid
         if(is.null(dataFile) || !file.exists(dataFile)) {
                 stop("Invalid data file")
